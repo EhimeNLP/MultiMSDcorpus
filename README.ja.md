@@ -6,7 +6,7 @@
 # 本コードの使い方
 run.shを実行すると、resultsというディレクトリが作成され、各言語それぞれにMSD-{train, dev, test}.tsvが作成されます。
 ```
-pip install > requirements.txt
+pip install -r requirements.txt
 
 bash ./run.sh
 ```
