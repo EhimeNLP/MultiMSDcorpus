@@ -3,7 +3,7 @@
 * It supports nine languages: German, English, Spanish, French, Italian, Japanese, Portuguese, Russian, and Chinese.
 * Here, we release the code to automatically build the MultiMSD corpus.
 
-# Treatment
+# Usage
 When you run run.sh, a directory named results is created, which contains MSD-{train, dev, test}.tsv for each language.
 ```
 pip install > requirements.txt
