@@ -6,7 +6,7 @@
 # Usage
 When you run run.sh, a directory named results is created, which contains MSD-{train, dev, test}.tsv for each language.
 ```
-pip install > requirements.txt
+pip install -r requirements.txt
 
 bash ./run.sh
 ```
