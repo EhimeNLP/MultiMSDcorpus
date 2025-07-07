@@ -1,10 +1,15 @@
 # MultiMSDコーパス
-* MSDマニュアルから専門家向けおよび一般向けの記事対を収集し、埋め込みベースの文アライメントを実施することで構築しました。
+* [MSDマニュアル](https://www.msdmanuals.com/)から専門家向けおよび一般向けの記事対を収集し、埋め込みベースの文アライメントを実施することで構築しました。
 * ドイツ語、英語、スペイン語、フランス語、イタリア語、日本語、ポルトガル語、ロシア語、中国語の9言語に対応しています。
 * ここではMultiMSDコーパスを自動構築するためのコードを公開します。
 
 # 本コードの使い方
-現在調整中
+run.shを実行すると、resultsというディレクトリが作成され、各言語それぞれにMSD-{train, dev, test}.tsvが作成されます。
+```
+pip install > requirements.txt
+
+bash ./run.sh
+```
 
 # 文献情報
 * Koki Horiguchi, Tomoyuki Kajiwara, Takashi Ninomiya, Shoko Wakamiya, Eiji Aramaki.  
