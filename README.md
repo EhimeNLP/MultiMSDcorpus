@@ -5,6 +5,9 @@
 
 # Usage
 When you run run.sh, a directory named results is created, which contains MSD-{train, dev, test}.tsv for each language.
+> This script collects data from the MSD Manual website. However, the HTML structure of the website may have changed since the time of the original data collection.
+> Therefore, the dataset you obtain may not be identical to the one used in the paper.
+> That said, if the number of sentence pairs in each TSV file is close to the original dataset size, the script can be considered to have run successfully.
 ```
 pip install -r requirements.txt
 
