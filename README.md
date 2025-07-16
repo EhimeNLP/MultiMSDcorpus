@@ -3,6 +3,18 @@
 * It supports nine languages: German, English, Spanish, French, Italian, Japanese, Portuguese, Russian, and Chinese.
 * Here, we release the code to automatically build the MultiMSD corpus.
 
+# Directory Structure
+Please place the `run.sh` script and the `scripts` directory in the same root directory as shown below.
+```
+├── requirements.txt
+├── run.sh
+└── scripts
+    ├── alignment
+    ├── collection
+    ├── preprocess
+    └── sentence_split
+```
+
 # Usage
 When you run run.sh, a directory named results is created, which contains MSD-{train, dev, test}.tsv for each language.
 > This script collects data from the MSD Manual website. However, the HTML structure of the website may have changed since the time of the original data collection.
