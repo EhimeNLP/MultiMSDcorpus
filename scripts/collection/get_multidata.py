@@ -166,7 +166,6 @@ def main():
         
         section_links = soup.select('.SectionList_sectionListItem__NNP4c')
         
-        # 各セクションで収集
         for section_index, link_tag in enumerate(section_links):
             try:
                 for lang in ALL_LANGS:
