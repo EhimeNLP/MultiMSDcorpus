@@ -58,7 +58,7 @@ def get_data(section_index: int, topic_index: int, pro_soup: BeautifulSoup, ama_
     previous_line = ""
     for ul in ama_soup.find_all('ul'): ul.decompose()
     for ol in ama_soup.find_all('ol'): ol.decompose()
-    for sec in pro_soup.find_all(class_='TopicFHead_topicFHeadTitle__pl6da'): sec.decompose()
+    for sec in ama_soup.find_all(class_='TopicFHead_topicFHeadTitle__pl6da'): sec.decompose()
     for table in ama_soup.find_all('div', {'data-testid': 'baseillustrative', 'class': 'undefined consumer false false'}): table.decompose()
     
     elements = ama_soup.select('span.TopicPara_topicText__CUB0d, span.TopicXLink_formatText__5UPAp, a[class*=home]')
