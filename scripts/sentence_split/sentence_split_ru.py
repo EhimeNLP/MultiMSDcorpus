@@ -43,8 +43,8 @@ def main():
    for section in range(1, 25):
         os.makedirs(f"{CLEANED_DIR}/professional/section{section}", exist_ok=True)
         os.makedirs(f"{CLEANED_DIR}/amateur/section{section}", exist_ok=True)
-        pro_files = [f for f in os.listdir(pro_base_dir + str(section)) if os.path.isfile(os.path.join(pro_base_dir + str(section), f))]
-        ama_files = [f for f in os.listdir(ama_base_dir + str(section)) if os.path.isfile(os.path.join(ama_base_dir + str(section), f))]
+        pro_files = sorted([f for f in os.listdir(pro_base_dir + str(section)) if os.path.isfile(os.path.join(pro_base_dir + str(section), f))])
+        ama_files = sorted([f for f in os.listdir(ama_base_dir + str(section)) if os.path.isfile(os.path.join(ama_base_dir + str(section), f))])
         print("section"+ str(section) + "：" + str(len(pro_files)))
         sentence_split(section, pro_files, ama_files)
 
