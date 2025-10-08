@@ -77,7 +77,7 @@ def main():
     for section_num in range(1, 25):
         section_dir = os.path.join(INPUT_BASE_DIR, LANG, "aligned_data", f"section{section_num}")
         if os.path.isdir(section_dir):
-            article_dir_names = [f for f in os.listdir(section_dir) if os.path.isdir(os.path.join(section_dir, f))]
+            article_dir_names = sorted([f for f in os.listdir(section_dir) if os.path.isdir(os.path.join(section_dir, f))])
             split_and_concat_files(section_num, article_dir_names)
 
     combine_final_sets(OUTPUT_BASE_DIR)
